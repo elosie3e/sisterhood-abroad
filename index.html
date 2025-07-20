@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home | Voices in the Diaspora</title>
+  <title>Home | Sisterhood Abroad</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Open+Sans&display=swap" rel="stylesheet">
   <style>
     body {
@@ -56,6 +56,72 @@
       border-radius: 5px;
       font-weight: bold;
     }
+    section {
+      padding: 3rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+    .articles-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .article-card {
+      background-color: #fff;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .article-card h4 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.2rem;
+      margin: 0 0 0.5rem;
+    }
+    .article-card p {
+      font-size: 0.95rem;
+      margin-bottom: 0.75rem;
+    }
+    .article-card a {
+      color: #e29578;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .story-form label, .story-form textarea, .story-form input {
+      display: block;
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+    .story-form textarea {
+      height: 150px;
+    }
+    .story-form button {
+      background-color: #e29578;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+    .mailing-form input[type="email"] {
+      padding: 0.5rem;
+      width: 100%;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .mailing-form button {
+      background-color: #e29578;
+      color: white;
+      padding: 0.5rem 1.25rem;
+      border: none;
+      border-radius: 4px;
+      font-weight: bold;
+    }
     footer {
       text-align: center;
       padding: 2rem;
@@ -67,7 +133,7 @@
 </head>
 <body>
   <header>
-    <h1>Voices in the Diaspora</h1>
+    <h1>Sisterhood Abroad</h1>
     <nav>
       <a href="#articles">Articles</a>
       <a href="#podcasts">Podcasts</a>
@@ -80,7 +146,7 @@
     <h2>Stories that Matter</h2>
     <p>
       A safe space for girls in the diaspora to share their journeys, celebrate their culture,
-      and connect through storytelling, art, and community.
+      and connect through storytelling, faith, and community.
     </p>
     <div class="cta-buttons">
       <a href="#articles">Read Articles</a>
@@ -88,8 +154,62 @@
     </div>
   </section>
 
+  <section id="articles">
+    <h3>Articles</h3>
+    <p>Read personal stories, cultural reflections, advice, and more—written by girls around the world.</p>
+    <div class="articles-grid">
+      <div class="article-card">
+        <h4>Finding My Voice Abroad</h4>
+        <p>A journey of courage, culture, and confidence while living overseas.</p>
+        <a href="https://yourblog.com/article1" target="_blank">Read more</a>
+      </div>
+      <div class="article-card">
+        <h4>Keeping My Faith in a New Land</h4>
+        <p>How I stayed spiritually grounded despite feeling disconnected from home.</p>
+        <a href="https://yourblog.com/article2" target="_blank">Read more</a>
+      </div>
+      <div class="article-card">
+        <h4>My First Cultural Shock</h4>
+        <p>Everything was new. Here's how I handled the surprising moments and emotions.</p>
+        <a href="https://yourblog.com/article3" target="_blank">Read more</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="podcasts">
+    <h3>Podcasts</h3>
+    <p>Listen in on meaningful conversations, experiences, and reflections from girls in the diaspora.</p>
+    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/show/7A5bocplz9tWTrBz5j6Tc7?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+  </section>
+
+  <section id="submit">
+    <h3>Share Your Story</h3>
+    <p>Want to share an experience of yours to help other girls? Feel free to drop your story here!</p>
+    <form class="story-form" action="https://formspree.io/f/yourformid" method="POST">
+      <label for="name">Your Name (or nickname):</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Your Email (optional):</label>
+      <input type="email" id="email" name="email" />
+
+      <label for="story">Your Story:</label>
+      <textarea id="story" name="message" required></textarea>
+
+      <button type="submit">Submit Story</button>
+    </form>
+  </section>
+
+  <section id="connect">
+    <h3>Join Us</h3>
+    <p>Want to stay in the loop or join our next Zoom gathering? Sign up below and we’ll keep you updated!</p>
+    <form class="mailing-form" action="https://formspree.io/f/yourformid" method="POST">
+      <input type="email" name="email" placeholder="Enter your email" required />
+      <button type="submit">Subscribe</button>
+    </form>
+  </section>
+
   <footer>
-    &copy; 2025 Voices in the Diaspora. All rights reserved.
+    &copy; 2025 Sisterhood Abroad. All rights reserved.
   </footer>
 </body>
 </html>
